@@ -1,5 +1,5 @@
-const Placeholder = () => {
-  return <div>placeholder</div>;
+const Sharlayan = () => {
+  return <div>Old Sharlayan</div>;
 };
 
-export default Placeholder;
+export default Sharlayan;
