@@ -1,0 +1,15 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  padding: 0;
+  background-color: azure;
+  text-align: end;
+  border-style: outset;
+  border-radius: 0 10px 10px 0;
+}
+
+.navbar li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 10px;
+}

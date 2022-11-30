@@ -1,11 +1,15 @@
 .menu {
-  /* display: flex; */
-  margin: 2%;
-  justify-content: center;
-  align-items: center;
   width: 400px;
-  border-radius: 4px;
-  border-color: black;
-  border-width: 2px;
-  border-style: solid;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+}
+
+.menu ul {
+  list-style: none;
+  text-align: left;
+}
+
+.sample {
+  background-color: burlywood;
 }
