@@ -5,9 +5,13 @@
   background-color: azure;
   text-align: end;
   border-style: outset;
-  border-radius: 0 10px 10px 0;
+  border-radius: 10px;
+  box-shadow: 5px 2px lightblue;
 }
-
+.brand {
+  display: flex;
+  float: left;
+}
 .navbar li {
   display: inline-block;
   list-style: none;
