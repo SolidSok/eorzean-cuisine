@@ -4,7 +4,8 @@ import Menu from './components/view/menu/menu';
 import Sample from './sample';
 import Navbar from './components/navbar/navbar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Restaurants from './restaurants/restaurants';
+import Locations from './locations/locations';
+import NotFound from './components/notFound/notFound';
 
 function App() {
   return (
@@ -14,9 +15,9 @@ function App() {
           <Route index element={<Welcome />} />
           <Route path="menu" element={<Menu />} />
           <Route path="sample" element={<Sample />} />
-          <Route path="restaurants" element={<Restaurants />} />
+          <Route path="locations" element={<Locations />} />
           {/* add error 404 page */}
-          <Route path="*" element={<Welcome />} />
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </BrowserRouter>

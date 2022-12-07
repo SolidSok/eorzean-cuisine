@@ -1,7 +1,8 @@
-export default function Restaurants() {
+import './locations.css';
+export default function Locations() {
   return (
-    <div>
-      <h1 className="title">Restaurants</h1>
+    <div className="locations">
+      <h1 className="title">Locations</h1>
       <div className="content">
         {' '}
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id corporis

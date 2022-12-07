@@ -16,9 +16,8 @@ export default function Navbar() {
             <Link to="/menu">menu</Link>
           </li>
           <li>
-            <Link to="/restaurants">restaurants</Link>
+            <Link to="/locations">Locations</Link>
           </li>
-          <li>locations</li>
         </ul>
       </nav>
       <Outlet />
