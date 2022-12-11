@@ -9,9 +9,63 @@ export default function Menu() {
           <b>Appetizers</b>
         </p>
         <ul>
-          <li>Item 1</li>
-          <li>Item 2</li>
-          <li>Item 3</li>
+          <li>
+            <img
+              className="menu-image"
+              src="https://via.placeholder.com/200x120?text=Menu+Image"
+              alt="placeholder"
+            />
+            <div className="menu-item">
+              {' '}
+              <p>
+                <b>Item</b>{' '}
+              </p>
+              <p>
+                Description Lorem ipsum, dolor sit amet consectetur adipisicing
+                elit. Quas esse a unde saepe sed accusantium inventore earum
+                modi, in quis sunt exercitationem deleniti et placeat cum
+                consequuntur! Tempora, quaerat fugit!
+              </p>
+            </div>
+          </li>
+          <li>
+            <img
+              className="menu-image"
+              src="https://via.placeholder.com/200x120?text=Menu+Image"
+              alt="placeholder"
+            />
+            <div className="menu-item">
+              {' '}
+              <p>
+                <b>Item</b>{' '}
+              </p>
+              <p>
+                Description Lorem ipsum, dolor sit amet consectetur adipisicing
+                elit. Quas esse a unde saepe sed accusantium inventore earum
+                modi, in quis sunt exercitationem deleniti et placeat cum
+                consequuntur! Tempora, quaerat fugit!
+              </p>
+            </div>
+          </li>
+          <li>
+            <img
+              className="menu-image"
+              src="https://via.placeholder.com/200x120?text=Menu+Image"
+              alt="placeholder"
+            />
+            <div className="menu-item">
+              {' '}
+              <p>
+                <b>Item</b>{' '}
+              </p>
+              <p>
+                Description Lorem ipsum, dolor sit amet consectetur adipisicing
+                elit. Quas esse a unde saepe sed accusantium inventore earum
+                modi, in quis sunt exercitationem deleniti et placeat cum
+                consequuntur! Tempora, quaerat fugit!
+              </p>
+            </div>
+          </li>
         </ul>
       </div>
       <div className="sample">
@@ -19,9 +73,63 @@ export default function Menu() {
           <b>Breakfast</b>
         </p>
         <ul>
-          <li>Item 1</li>
-          <li>Item 2</li>
-          <li>Item 3</li>
+          <li>
+            <img
+              className="menu-image"
+              src="https://via.placeholder.com/200x120?text=Menu+Image"
+              alt="placeholder"
+            />
+            <div className="menu-item">
+              {' '}
+              <p>
+                <b>Item</b>{' '}
+              </p>
+              <p>
+                Description Lorem ipsum, dolor sit amet consectetur adipisicing
+                elit. Quas esse a unde saepe sed accusantium inventore earum
+                modi, in quis sunt exercitationem deleniti et placeat cum
+                consequuntur! Tempora, quaerat fugit!
+              </p>
+            </div>
+          </li>
+          <li>
+            <img
+              className="menu-image"
+              src="https://via.placeholder.com/200x120?text=Menu+Image"
+              alt="placeholder"
+            />
+            <div className="menu-item">
+              {' '}
+              <p>
+                <b>Item</b>{' '}
+              </p>
+              <p>
+                Description Lorem ipsum, dolor sit amet consectetur adipisicing
+                elit. Quas esse a unde saepe sed accusantium inventore earum
+                modi, in quis sunt exercitationem deleniti et placeat cum
+                consequuntur! Tempora, quaerat fugit!
+              </p>
+            </div>
+          </li>
+          <li>
+            <img
+              className="menu-image"
+              src="https://via.placeholder.com/200x120?text=Menu+Image"
+              alt="placeholder"
+            />
+            <div className="menu-item">
+              {' '}
+              <p>
+                <b>Item</b>{' '}
+              </p>
+              <p>
+                Description Lorem ipsum, dolor sit amet consectetur adipisicing
+                elit. Quas esse a unde saepe sed accusantium inventore earum
+                modi, in quis sunt exercitationem deleniti et placeat cum
+                consequuntur! Tempora, quaerat fugit!
+              </p>
+            </div>
+          </li>
         </ul>
       </div>
       <div className="sample">
@@ -29,9 +137,63 @@ export default function Menu() {
           <b>Lunch</b>
         </p>
         <ul>
-          <li>Item 1</li>
-          <li>Item 2</li>
-          <li>Item 3</li>
+          <li>
+            <img
+              className="menu-image"
+              src="https://via.placeholder.com/200x120?text=Menu+Image"
+              alt="placeholder"
+            />
+            <div className="menu-item">
+              {' '}
+              <p>
+                <b>Item</b>{' '}
+              </p>
+              <p>
+                Description Lorem ipsum, dolor sit amet consectetur adipisicing
+                elit. Quas esse a unde saepe sed accusantium inventore earum
+                modi, in quis sunt exercitationem deleniti et placeat cum
+                consequuntur! Tempora, quaerat fugit!
+              </p>
+            </div>
+          </li>
+          <li>
+            <img
+              className="menu-image"
+              src="https://via.placeholder.com/200x120?text=Menu+Image"
+              alt="placeholder"
+            />
+            <div className="menu-item">
+              {' '}
+              <p>
+                <b>Item</b>{' '}
+              </p>
+              <p>
+                Description Lorem ipsum, dolor sit amet consectetur adipisicing
+                elit. Quas esse a unde saepe sed accusantium inventore earum
+                modi, in quis sunt exercitationem deleniti et placeat cum
+                consequuntur! Tempora, quaerat fugit!
+              </p>
+            </div>
+          </li>
+          <li>
+            <img
+              className="menu-image"
+              src="https://via.placeholder.com/200x120?text=Menu+Image"
+              alt="placeholder"
+            />
+            <div className="menu-item">
+              {' '}
+              <p>
+                <b>Item</b>{' '}
+              </p>
+              <p>
+                Description Lorem ipsum, dolor sit amet consectetur adipisicing
+                elit. Quas esse a unde saepe sed accusantium inventore earum
+                modi, in quis sunt exercitationem deleniti et placeat cum
+                consequuntur! Tempora, quaerat fugit!
+              </p>
+            </div>
+          </li>
         </ul>
       </div>
       <div className="sample">
@@ -39,9 +201,63 @@ export default function Menu() {
           <b>Entrees</b>
         </p>
         <ul>
-          <li>Item 1</li>
-          <li>Item 2</li>
-          <li>Item 3</li>
+          <li>
+            <img
+              className="menu-image"
+              src="https://via.placeholder.com/200x120?text=Menu+Image"
+              alt="placeholder"
+            />
+            <div className="menu-item">
+              {' '}
+              <p>
+                <b>Item</b>{' '}
+              </p>
+              <p>
+                Description Lorem ipsum, dolor sit amet consectetur adipisicing
+                elit. Quas esse a unde saepe sed accusantium inventore earum
+                modi, in quis sunt exercitationem deleniti et placeat cum
+                consequuntur! Tempora, quaerat fugit!
+              </p>
+            </div>
+          </li>
+          <li>
+            <img
+              className="menu-image"
+              src="https://via.placeholder.com/200x120?text=Menu+Image"
+              alt="placeholder"
+            />
+            <div className="menu-item">
+              {' '}
+              <p>
+                <b>Item</b>{' '}
+              </p>
+              <p>
+                Description Lorem ipsum, dolor sit amet consectetur adipisicing
+                elit. Quas esse a unde saepe sed accusantium inventore earum
+                modi, in quis sunt exercitationem deleniti et placeat cum
+                consequuntur! Tempora, quaerat fugit!
+              </p>
+            </div>
+          </li>
+          <li>
+            <img
+              className="menu-image"
+              src="https://via.placeholder.com/200x120?text=Menu+Image"
+              alt="placeholder"
+            />
+            <div className="menu-item">
+              {' '}
+              <p>
+                <b>Item</b>{' '}
+              </p>
+              <p>
+                Description Lorem ipsum, dolor sit amet consectetur adipisicing
+                elit. Quas esse a unde saepe sed accusantium inventore earum
+                modi, in quis sunt exercitationem deleniti et placeat cum
+                consequuntur! Tempora, quaerat fugit!
+              </p>
+            </div>
+          </li>
         </ul>
       </div>
       <div className="sample">
@@ -49,9 +265,63 @@ export default function Menu() {
           <b>Desserts</b>
         </p>
         <ul>
-          <li>Item 1</li>
-          <li>Item 2</li>
-          <li>Item 3</li>
+          <li>
+            <img
+              className="menu-image"
+              src="https://via.placeholder.com/200x120?text=Menu+Image"
+              alt="placeholder"
+            />
+            <div className="menu-item">
+              {' '}
+              <p>
+                <b>Item</b>{' '}
+              </p>
+              <p>
+                Description Lorem ipsum, dolor sit amet consectetur adipisicing
+                elit. Quas esse a unde saepe sed accusantium inventore earum
+                modi, in quis sunt exercitationem deleniti et placeat cum
+                consequuntur! Tempora, quaerat fugit!
+              </p>
+            </div>
+          </li>
+          <li>
+            <img
+              className="menu-image"
+              src="https://via.placeholder.com/200x120?text=Menu+Image"
+              alt="placeholder"
+            />
+            <div className="menu-item">
+              {' '}
+              <p>
+                <b>Item</b>{' '}
+              </p>
+              <p>
+                Description Lorem ipsum, dolor sit amet consectetur adipisicing
+                elit. Quas esse a unde saepe sed accusantium inventore earum
+                modi, in quis sunt exercitationem deleniti et placeat cum
+                consequuntur! Tempora, quaerat fugit!
+              </p>
+            </div>
+          </li>
+          <li>
+            <img
+              className="menu-image"
+              src="https://via.placeholder.com/200x120?text=Menu+Image"
+              alt="placeholder"
+            />
+            <div className="menu-item">
+              {' '}
+              <p>
+                <b>Item</b>{' '}
+              </p>
+              <p>
+                Description Lorem ipsum, dolor sit amet consectetur adipisicing
+                elit. Quas esse a unde saepe sed accusantium inventore earum
+                modi, in quis sunt exercitationem deleniti et placeat cum
+                consequuntur! Tempora, quaerat fugit!
+              </p>
+            </div>
+          </li>
         </ul>
       </div>
     </div>

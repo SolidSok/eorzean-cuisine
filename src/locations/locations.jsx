@@ -1,4 +1,11 @@
+import Limsa from './cities/limsa/limsa';
+import Gridania from './cities/gridania/gridania';
 import './locations.css';
+import Uldah from './uldah/uldah';
+import Ishgard from './cities/ishgard/ishgard';
+import Kugane from './cities/kugane/kugane';
+import Crystarium from './cities/crystarium/crystarium';
+import Sharlayan from './sharlayan/sharlayan';
 export default function Locations() {
   return (
     <div className="locations">
@@ -10,6 +17,13 @@ export default function Locations() {
         consectetur voluptates, ullam ut dolorum fuga labore sapiente assumenda
         tenetur.
       </div>
+      <Limsa />
+      <Gridania />
+      <Uldah />
+      <Ishgard />
+      <Kugane />
+      <Crystarium />
+      <Sharlayan />
     </div>
   );
 }

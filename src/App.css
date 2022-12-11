@@ -31,4 +31,5 @@ body {
 
 .content {
   margin: 1rem;
+  display: flex;
 }
