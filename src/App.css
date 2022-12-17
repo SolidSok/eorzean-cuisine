@@ -11,6 +11,7 @@ p {
 body {
   box-sizing: border-box;
   background-color: aliceblue;
+  padding-bottom: 2%;
 }
 /* .App {
   text-align: center;

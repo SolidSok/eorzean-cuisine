@@ -1,328 +1,113 @@
 import React from 'react';
-
 import './menu.css';
+import MenuItemCard from './menuItemCard';
+import SampleImage from './sampleImage';
+
 export default function Menu() {
+  // sample array for dev testing, will replace with data from API//
+  const food = [
+    {
+      name: 'food',
+      description: 'description',
+      type: 'appetizer',
+      region: 'region',
+      id: 1,
+    },
+    {
+      name: 'food',
+      description: 'description',
+      type: 'appetizer',
+      region: 'region',
+      id: 2,
+    },
+    {
+      name: 'food',
+      description: 'description',
+      type: 'appetizer',
+      region: 'region',
+      id: 3,
+    },
+    {
+      name: 'food',
+      description: 'description',
+      type: 'breakfast',
+      region: 'region',
+      id: 4,
+    },
+    {
+      name: 'food',
+      description: 'description',
+      type: 'breakfast',
+      region: 'region',
+      id: 5,
+    },
+    {
+      name: 'food',
+      description: 'description',
+      type: 'entree',
+      region: 'region',
+      id: 6,
+    },
+    {
+      name: 'food',
+      description: 'description',
+      type: 'entree',
+      region: 'region',
+      id: 7,
+    },
+    {
+      name: 'food',
+      description: 'description',
+      type: 'dessert',
+      region: 'region',
+      id: 8,
+    },
+    {
+      name: 'food',
+      description: 'description',
+      type: 'dessert',
+      region: 'region',
+      id: 9,
+    },
+  ];
+  // create different arrays from API data to fill each food section//
+  const appetizers = food.filter(food => food.type === 'appetizer');
+  const breakfast = food.filter(food => food.type === 'breakfast');
+  const entrees = food.filter(food => food.type === 'entree');
+  const desserts = food.filter(food => food.type === 'dessert');
+
   return (
     <div className="menu">
       <div className="sample">
-        <p>
+        <h2>
           <b>Appetizers</b>
-        </p>
-        <ul>
-          <li>
-            <img
-              className="menu-image"
-              src="https://via.placeholder.com/200x120?text=Menu+Image"
-              alt="placeholder"
-            />
-            <div className="menu-item">
-              {' '}
-              <p>
-                <b>Item</b>{' '}
-              </p>
-              <p>
-                Description Lorem ipsum, dolor sit amet consectetur adipisicing
-                elit. Quas esse a unde saepe sed accusantium inventore earum
-                modi, in quis sunt exercitationem deleniti et placeat cum
-                consequuntur! Tempora, quaerat fugit!
-              </p>
-            </div>
-          </li>
-          <li>
-            <img
-              className="menu-image"
-              src="https://via.placeholder.com/200x120?text=Menu+Image"
-              alt="placeholder"
-            />
-            <div className="menu-item">
-              {' '}
-              <p>
-                <b>Item</b>{' '}
-              </p>
-              <p>
-                Description Lorem ipsum, dolor sit amet consectetur adipisicing
-                elit. Quas esse a unde saepe sed accusantium inventore earum
-                modi, in quis sunt exercitationem deleniti et placeat cum
-                consequuntur! Tempora, quaerat fugit!
-              </p>
-            </div>
-          </li>
-          <li>
-            <img
-              className="menu-image"
-              src="https://via.placeholder.com/200x120?text=Menu+Image"
-              alt="placeholder"
-            />
-            <div className="menu-item">
-              {' '}
-              <p>
-                <b>Item</b>{' '}
-              </p>
-              <p>
-                Description Lorem ipsum, dolor sit amet consectetur adipisicing
-                elit. Quas esse a unde saepe sed accusantium inventore earum
-                modi, in quis sunt exercitationem deleniti et placeat cum
-                consequuntur! Tempora, quaerat fugit!
-              </p>
-            </div>
-          </li>
-        </ul>
+        </h2>
+        <SampleImage />
+        <MenuItemCard key={food.id} food={appetizers} />
       </div>
+
       <div className="sample">
-        <p>
+        <h2>
           <b>Breakfast</b>
-        </p>
-        <ul>
-          <li>
-            <img
-              className="menu-image"
-              src="https://via.placeholder.com/200x120?text=Menu+Image"
-              alt="placeholder"
-            />
-            <div className="menu-item">
-              {' '}
-              <p>
-                <b>Item</b>{' '}
-              </p>
-              <p>
-                Description Lorem ipsum, dolor sit amet consectetur adipisicing
-                elit. Quas esse a unde saepe sed accusantium inventore earum
-                modi, in quis sunt exercitationem deleniti et placeat cum
-                consequuntur! Tempora, quaerat fugit!
-              </p>
-            </div>
-          </li>
-          <li>
-            <img
-              className="menu-image"
-              src="https://via.placeholder.com/200x120?text=Menu+Image"
-              alt="placeholder"
-            />
-            <div className="menu-item">
-              {' '}
-              <p>
-                <b>Item</b>{' '}
-              </p>
-              <p>
-                Description Lorem ipsum, dolor sit amet consectetur adipisicing
-                elit. Quas esse a unde saepe sed accusantium inventore earum
-                modi, in quis sunt exercitationem deleniti et placeat cum
-                consequuntur! Tempora, quaerat fugit!
-              </p>
-            </div>
-          </li>
-          <li>
-            <img
-              className="menu-image"
-              src="https://via.placeholder.com/200x120?text=Menu+Image"
-              alt="placeholder"
-            />
-            <div className="menu-item">
-              {' '}
-              <p>
-                <b>Item</b>{' '}
-              </p>
-              <p>
-                Description Lorem ipsum, dolor sit amet consectetur adipisicing
-                elit. Quas esse a unde saepe sed accusantium inventore earum
-                modi, in quis sunt exercitationem deleniti et placeat cum
-                consequuntur! Tempora, quaerat fugit!
-              </p>
-            </div>
-          </li>
-        </ul>
+        </h2>
+        <SampleImage />
+        <MenuItemCard food={breakfast} key={food.id} />
       </div>
+
       <div className="sample">
-        <p>
-          <b>Lunch</b>
-        </p>
-        <ul>
-          <li>
-            <img
-              className="menu-image"
-              src="https://via.placeholder.com/200x120?text=Menu+Image"
-              alt="placeholder"
-            />
-            <div className="menu-item">
-              {' '}
-              <p>
-                <b>Item</b>{' '}
-              </p>
-              <p>
-                Description Lorem ipsum, dolor sit amet consectetur adipisicing
-                elit. Quas esse a unde saepe sed accusantium inventore earum
-                modi, in quis sunt exercitationem deleniti et placeat cum
-                consequuntur! Tempora, quaerat fugit!
-              </p>
-            </div>
-          </li>
-          <li>
-            <img
-              className="menu-image"
-              src="https://via.placeholder.com/200x120?text=Menu+Image"
-              alt="placeholder"
-            />
-            <div className="menu-item">
-              {' '}
-              <p>
-                <b>Item</b>{' '}
-              </p>
-              <p>
-                Description Lorem ipsum, dolor sit amet consectetur adipisicing
-                elit. Quas esse a unde saepe sed accusantium inventore earum
-                modi, in quis sunt exercitationem deleniti et placeat cum
-                consequuntur! Tempora, quaerat fugit!
-              </p>
-            </div>
-          </li>
-          <li>
-            <img
-              className="menu-image"
-              src="https://via.placeholder.com/200x120?text=Menu+Image"
-              alt="placeholder"
-            />
-            <div className="menu-item">
-              {' '}
-              <p>
-                <b>Item</b>{' '}
-              </p>
-              <p>
-                Description Lorem ipsum, dolor sit amet consectetur adipisicing
-                elit. Quas esse a unde saepe sed accusantium inventore earum
-                modi, in quis sunt exercitationem deleniti et placeat cum
-                consequuntur! Tempora, quaerat fugit!
-              </p>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <div className="sample">
-        <p>
+        <h2>
           <b>Entrees</b>
-        </p>
-        <ul>
-          <li>
-            <img
-              className="menu-image"
-              src="https://via.placeholder.com/200x120?text=Menu+Image"
-              alt="placeholder"
-            />
-            <div className="menu-item">
-              {' '}
-              <p>
-                <b>Item</b>{' '}
-              </p>
-              <p>
-                Description Lorem ipsum, dolor sit amet consectetur adipisicing
-                elit. Quas esse a unde saepe sed accusantium inventore earum
-                modi, in quis sunt exercitationem deleniti et placeat cum
-                consequuntur! Tempora, quaerat fugit!
-              </p>
-            </div>
-          </li>
-          <li>
-            <img
-              className="menu-image"
-              src="https://via.placeholder.com/200x120?text=Menu+Image"
-              alt="placeholder"
-            />
-            <div className="menu-item">
-              {' '}
-              <p>
-                <b>Item</b>{' '}
-              </p>
-              <p>
-                Description Lorem ipsum, dolor sit amet consectetur adipisicing
-                elit. Quas esse a unde saepe sed accusantium inventore earum
-                modi, in quis sunt exercitationem deleniti et placeat cum
-                consequuntur! Tempora, quaerat fugit!
-              </p>
-            </div>
-          </li>
-          <li>
-            <img
-              className="menu-image"
-              src="https://via.placeholder.com/200x120?text=Menu+Image"
-              alt="placeholder"
-            />
-            <div className="menu-item">
-              {' '}
-              <p>
-                <b>Item</b>{' '}
-              </p>
-              <p>
-                Description Lorem ipsum, dolor sit amet consectetur adipisicing
-                elit. Quas esse a unde saepe sed accusantium inventore earum
-                modi, in quis sunt exercitationem deleniti et placeat cum
-                consequuntur! Tempora, quaerat fugit!
-              </p>
-            </div>
-          </li>
-        </ul>
+        </h2>
+        <SampleImage />
+        <MenuItemCard food={entrees} key={food.id} />
       </div>
+
       <div className="sample">
-        <p>
+        <h2>
           <b>Desserts</b>
-        </p>
-        <ul>
-          <li>
-            <img
-              className="menu-image"
-              src="https://via.placeholder.com/200x120?text=Menu+Image"
-              alt="placeholder"
-            />
-            <div className="menu-item">
-              {' '}
-              <p>
-                <b>Item</b>{' '}
-              </p>
-              <p>
-                Description Lorem ipsum, dolor sit amet consectetur adipisicing
-                elit. Quas esse a unde saepe sed accusantium inventore earum
-                modi, in quis sunt exercitationem deleniti et placeat cum
-                consequuntur! Tempora, quaerat fugit!
-              </p>
-            </div>
-          </li>
-          <li>
-            <img
-              className="menu-image"
-              src="https://via.placeholder.com/200x120?text=Menu+Image"
-              alt="placeholder"
-            />
-            <div className="menu-item">
-              {' '}
-              <p>
-                <b>Item</b>{' '}
-              </p>
-              <p>
-                Description Lorem ipsum, dolor sit amet consectetur adipisicing
-                elit. Quas esse a unde saepe sed accusantium inventore earum
-                modi, in quis sunt exercitationem deleniti et placeat cum
-                consequuntur! Tempora, quaerat fugit!
-              </p>
-            </div>
-          </li>
-          <li>
-            <img
-              className="menu-image"
-              src="https://via.placeholder.com/200x120?text=Menu+Image"
-              alt="placeholder"
-            />
-            <div className="menu-item">
-              {' '}
-              <p>
-                <b>Item</b>{' '}
-              </p>
-              <p>
-                Description Lorem ipsum, dolor sit amet consectetur adipisicing
-                elit. Quas esse a unde saepe sed accusantium inventore earum
-                modi, in quis sunt exercitationem deleniti et placeat cum
-                consequuntur! Tempora, quaerat fugit!
-              </p>
-            </div>
-          </li>
-        </ul>
+        </h2>
+        <SampleImage />
+        <MenuItemCard food={desserts} key={food.id} />
       </div>
     </div>
   );

@@ -1,12 +1,14 @@
-import Limsa from './cities/limsa/limsa';
-import Gridania from './cities/gridania/gridania';
 import './locations.css';
-import Uldah from './uldah/uldah';
-import Ishgard from './cities/ishgard/ishgard';
-import Kugane from './cities/kugane/kugane';
-import Crystarium from './cities/crystarium/crystarium';
-import Sharlayan from './sharlayan/sharlayan';
+
+import LocationCard from './LocationCard';
 export default function Locations() {
+  const locationSample = [
+    { name: 'Limsa Lominsa', description: 'lorem ipsum', id: 1 },
+    { name: 'location', description: 'description', id: 2 },
+    { name: 'location', description: 'description', id: 3 },
+    { name: 'location', description: 'description', id: 4 },
+    { name: 'location', description: 'description', id: 5 },
+  ];
   return (
     <div className="locations">
       <h1 className="title">Locations</h1>
@@ -17,13 +19,8 @@ export default function Locations() {
         consectetur voluptates, ullam ut dolorum fuga labore sapiente assumenda
         tenetur.
       </div>
-      <Limsa />
-      <Gridania />
-      <Uldah />
-      <Ishgard />
-      <Kugane />
-      <Crystarium />
-      <Sharlayan />
+
+      <LocationCard key={locationSample} locationSample={locationSample} />
     </div>
   );
 }
