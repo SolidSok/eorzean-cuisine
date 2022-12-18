@@ -1,7 +1,6 @@
 import React from 'react';
 import './menu.css';
-import MenuItemCard from './menuItemCard';
-import SampleImage from './sampleImage';
+import MenuCard from './menuCard';
 
 export default function Menu() {
   // sample array for dev testing, will replace with data from API//
@@ -77,38 +76,15 @@ export default function Menu() {
   const desserts = food.filter(food => food.type === 'dessert');
 
   return (
-    <div className="menu">
-      <div className="sample">
-        <h2>
-          <b>Appetizers</b>
-        </h2>
-        <SampleImage />
-        <MenuItemCard key={food.id} food={appetizers} />
-      </div>
+    //great example of reusable components below //
+    <div className="menu sample">
+      <MenuCard key={food.id} food={appetizers} name="Appetizers" />
 
-      <div className="sample">
-        <h2>
-          <b>Breakfast</b>
-        </h2>
-        <SampleImage />
-        <MenuItemCard food={breakfast} key={food.id} />
-      </div>
+      <MenuCard food={breakfast} key={food.id} name="Breakfast" />
 
-      <div className="sample">
-        <h2>
-          <b>Entrees</b>
-        </h2>
-        <SampleImage />
-        <MenuItemCard food={entrees} key={food.id} />
-      </div>
+      <MenuCard food={entrees} key={food.id} name="Entrees" />
 
-      <div className="sample">
-        <h2>
-          <b>Desserts</b>
-        </h2>
-        <SampleImage />
-        <MenuItemCard food={desserts} key={food.id} />
-      </div>
+      <MenuCard food={desserts} key={food.id} name="Desserts" />
     </div>
   );
 }

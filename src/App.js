@@ -1,6 +1,6 @@
 import './App.css';
-import Welcome from './components/view/welcome/welcome';
-import Menu from './components/view/menu/menu';
+import Welcome from './components/welcome/welcome';
+import Menu from './components/menu/menu';
 import Sample from './sample';
 import Navbar from './components/navbar/navbar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
