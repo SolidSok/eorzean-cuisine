@@ -10,16 +10,10 @@
   text-align: left;
 }
 
-.menu li {
-  display: flex;
-}
-.menu b {
+.menu b,
+.menu span {
   border-bottom: 1px solid black;
 }
-.sample {
-  background-color: burlywood;
-}
-
 .menu-image {
   border: 1px solid black;
 
@@ -32,4 +26,6 @@
   width: 350px;
   height: 180px;
   margin: 10px;
+  border: 1px solid black;
+  display: grid;
 }
