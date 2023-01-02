@@ -1,3 +1,12 @@
-.sample {
+.menu {
   background-color: burlywood;
+}
+.menu-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu-item {
+  background-color: bisque;
 }

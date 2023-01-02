@@ -28,7 +28,7 @@ export default function Menu() {
 
   return (
     //great example of reusable components below //
-    <div className="menu sample">
+    <div className="menu">
       <MenuCard
         food={food.filter(food => food.type === 'appetizer')}
         name="Appetizers"

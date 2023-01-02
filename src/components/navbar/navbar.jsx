@@ -8,15 +8,18 @@ export default function Navbar() {
       {' '}
       <nav className="navbar">
         <ul>
-          <li>
-            <Link to="/">home</Link>
+          <li className="home-button">
+            <Link to="/">Home</Link>
           </li>
           <li>
             {' '}
-            <Link to="/menu">menu</Link>
+            <Link to="/menu">Menu</Link>
           </li>
           <li>
             <Link to="/locations">Locations</Link>
+          </li>
+          <li>
+            <Link to="/profile">Your Account</Link>
           </li>
         </ul>
       </nav>
