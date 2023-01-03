@@ -1,5 +1,7 @@
 .menu {
   background-color: burlywood;
+  display: flex;
+  flex-wrap: wrap;
 }
 .menu-section {
   display: flex;

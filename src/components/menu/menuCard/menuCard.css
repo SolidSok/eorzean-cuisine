@@ -1,5 +1,5 @@
 .menu {
-  width: 850px;
+  max-width: 800px;
   justify-content: center;
   margin: auto;
   text-align: center;
@@ -23,9 +23,34 @@
 }
 .menu-item {
   width: 350px;
-  height: 180px;
-  margin: 10px;
+  height: 200px;
   border: 1px solid black;
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   box-shadow: 4px 3px 3px gray;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.category-header {
+  background-color: rgba(245, 245, 220, 0.699);
+  padding: 10px;
+  margin: 10px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.food-description {
+  text-align: left;
+}
+.price {
+  text-align: end;
+}
+
+.food-name {
+  display: block;
+  width: 100%;
 }

@@ -1,13 +1,15 @@
 import React from 'react';
 import './menu.css';
 import MenuCard from './menuCard/menuCard';
-import mockData from '../../mockData';
 import { useEffect } from 'react';
 import axios from 'axios';
 import { useState } from 'react';
 
 export default function Menu() {
   const [food, setFood] = useState([]);
+  const breakfastImage = (
+    <img href="https://images.squarespace-cdn.com/content/v1/5bf4a3a07e3c3abf46ab8bdd/1570568873820-W2CT27ALLVTIF0JMREU0/00100lPORTRAIT_00100_BURST20191007182121684_COVER.jpg?format=1000w" />
+  );
 
   const getFood = () => {
     axios
@@ -40,6 +42,7 @@ export default function Menu() {
       <MenuCard
         food={food.filter(food => food.type === 'breakfast')}
         name="Breakfast"
+        image={breakfastImage}
       />
       <MenuCard
         food={food.filter(food => food.type === 'soups')}
