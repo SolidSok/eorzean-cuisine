@@ -17,7 +17,7 @@ export default function MenuCard({ food, name, image }) {
           return (
             <div
               // key={food.id}
-              className="menu-item"
+              className="food-item"
               key={food._id}>
               <b>
                 <p className="food-name">
@@ -26,6 +26,7 @@ export default function MenuCard({ food, name, image }) {
               </b>{' '}
               <p className="food-description"> {food.description}</p>{' '}
               <p className="food-description">Popular in: {food.region}</p>
+              <tr></tr>
               <p className="price">Price: {food.price}</p>
             </div>
           );

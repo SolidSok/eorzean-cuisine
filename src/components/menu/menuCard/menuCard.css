@@ -21,7 +21,8 @@
   box-shadow: 4px 3px 3px gray;
   align-self: center;
 }
-.menu-item {
+.food-item {
+  background-color: bisque;
   width: 350px;
   height: 200px;
   border: 1px solid black;
@@ -31,7 +32,9 @@
   margin: 5px;
   border-radius: 5px;
 }
-
+.category {
+  font-size: 1.4em;
+}
 .category-header {
   background-color: rgba(245, 245, 220, 0.699);
   padding: 10px;
@@ -51,6 +54,7 @@
 }
 
 .food-name {
+  font-size: 1.2em;
   display: block;
   width: 100%;
 }
