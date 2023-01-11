@@ -1,3 +1,4 @@
+// import Cactuar from './cactuar';
 import './welcome.css';
 export default function Welcome() {
   return (
@@ -13,6 +14,8 @@ export default function Welcome() {
         voluptas? Distinctio eos dolores illo. Voluptates, cum at? Quae repellat
         aut voluptatum iste.
       </div>
+      {/* add design later */}
+      {/* <Cactuar /> */}
     </div>
   );
 }

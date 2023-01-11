@@ -5,6 +5,7 @@ import Navbar from './components/navbar/navbar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Locations from './components/locations/locations';
 import NotFound from './components/notFound/notFound';
+import Users from './components/user/profile';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="menu" element={<Menu />} />
           <Route path="locations" element={<Locations />} />
           {/* add error 404 page */}
+          <Route path="profile" element={<Users />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

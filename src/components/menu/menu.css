@@ -8,3 +8,11 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+.menu-image {
+  border: 1px solid black;
+  /* width: 25%; */
+  margin-bottom: 10px;
+  margin-right: 1rem;
+  box-shadow: 4px 3px 3px gray;
+  align-self: center;
+}
