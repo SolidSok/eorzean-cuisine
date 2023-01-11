@@ -12,7 +12,7 @@ export default function Menu() {
   const images = menuImages;
 
   const getFood = async () => {
-    axios
+    await axios
       .get('https://eorzean-cuisine.herokuapp.com/food')
       .then(res => {
         setFood(res.data);
