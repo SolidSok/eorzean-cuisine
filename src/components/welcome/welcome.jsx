@@ -3,16 +3,25 @@ import './welcome.css';
 export default function Welcome() {
   return (
     <div className="welcome">
-      <h1 className="title">Welcome!</h1>
+      <h1 className="title">The Eorzean Cafe</h1>
       <div className="content">
         <img
           src="https://via.placeholder.com/400x300?text=Restaurant+Image"
           alt="placeholder"
         />{' '}
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis eum
-        asperiores excepturi dolores reiciendis ex temporibus voluptatem
-        voluptas? Distinctio eos dolores illo. Voluptates, cum at? Quae repellat
-        aut voluptatum iste.
+        <p className="welcome-header">
+          Welcome to the Eorzean Cafe! Come in and enjoy delicious meals from
+          all around the world of Eorzea.
+        </p>
+      </div>
+      <div>
+        {' '}
+        <p className="description">
+          {' '}
+          From the snowy fields of Ishgard, to the shores of Kugane, and even
+          regions thought lost to time, we have procured many different kinds of
+          recipes to meet all kinds of different tastes.
+        </p>
       </div>
       {/* add design later */}
       {/* <Cactuar /> */}
