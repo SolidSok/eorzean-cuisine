@@ -1,5 +1,15 @@
+.location {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.location-header {
+  background-color: rgba(245, 245, 220, 0.699);
+  border-radius: 2rem;
+}
 .location-card {
   background-color: bisque;
+  border-radius: 1rem;
 }
 .location-details {
   justify-content: unset;
@@ -18,4 +28,8 @@
 }
 .location-tribes {
   width: 200px;
+}
+
+.location-card span {
+  border-bottom: 1px solid black;
 }

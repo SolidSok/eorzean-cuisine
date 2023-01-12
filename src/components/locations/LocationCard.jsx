@@ -7,7 +7,9 @@ export default function LocationCard({ locationSample }) {
       {locationSample.map(l => {
         return (
           <div key={l.id} className="location-card">
-            <h2> {l.name}</h2>
+            <h1>
+              <span> {l.name}</span>
+            </h1>
             <div className="location-details">
               {' '}
               <div className="location-description">

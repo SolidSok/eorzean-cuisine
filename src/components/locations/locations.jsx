@@ -10,14 +10,14 @@ export default function Locations() {
     { name: 'location', description: 'description', id: 5 },
   ];
   return (
-    <div className="locations">
-      <h1 className="title">Locations</h1>
-      <div className="content">
-        {' '}
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id corporis
-        inventore minus autem, repellat eos nulla quis debitis? Modi asperiores
-        consectetur voluptates, ullam ut dolorum fuga labore sapiente assumenda
-        tenetur.
+    <div className="location">
+      <div className="location-header">
+        <h1 className="title header">The Lands of Eorzea</h1>
+        <p className="header info">
+          The World of Final Fantasy 14 is filled with many different
+          environments and cultures. These lands span across, not just the
+          continent of Eorzea, but also space and time.
+        </p>
       </div>
 
       <LocationCard key={locationSample} locationSample={locationSample} />
