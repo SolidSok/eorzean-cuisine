@@ -3,10 +3,11 @@ import './welcome.css';
 export default function Welcome() {
   return (
     <div className="welcome">
-      <h1 className="title">The Eorzean Cafe</h1>
+      <h1 className="title">The Eorzean Diner</h1>
       <div className="content">
         <img
-          src="https://via.placeholder.com/400x300?text=Restaurant+Image"
+          className="welcome-image"
+          src={require('../../assets/crystariumWelcome.jpg')}
           alt="placeholder"
         />{' '}
         <h3 className="welcome-header">

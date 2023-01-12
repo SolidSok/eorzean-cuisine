@@ -35,6 +35,11 @@ body {
   display: flex;
 }
 
+.header {
+  max-width: 720px;
+  margin: 1rem;
+}
+
 @media (max-width: 700px) {
   .content {
     margin: 1rem;
