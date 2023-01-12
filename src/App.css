@@ -34,3 +34,11 @@ body {
   margin: 1rem;
   display: flex;
 }
+
+@media (max-width: 700px) {
+  .content {
+    margin: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

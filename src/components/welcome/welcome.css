@@ -7,10 +7,16 @@
 }
 .title {
   text-align: center;
+  font-size: 3rem;
   border-bottom: 1px solid black;
   /* justify-content: center; */
 }
 .welcome-header {
   display: flex;
   align-items: center;
+  padding: 1rem;
+}
+
+.welcome-description {
+  max-width: 500px;
 }

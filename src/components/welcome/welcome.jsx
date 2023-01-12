@@ -9,19 +9,19 @@ export default function Welcome() {
           src="https://via.placeholder.com/400x300?text=Restaurant+Image"
           alt="placeholder"
         />{' '}
-        <p className="welcome-header">
+        <h3 className="welcome-header">
           Welcome to the Eorzean Cafe! Come in and enjoy delicious meals from
-          all around the world of Eorzea.
-        </p>
+          all around the world of Eorzea!
+        </h3>
       </div>
       <div>
         {' '}
-        <p className="description">
+        <h4 className="welcome-description">
           {' '}
           From the snowy fields of Ishgard, to the shores of Kugane, and even
           regions thought lost to time, we have procured many different kinds of
           recipes to meet all kinds of different tastes.
-        </p>
+        </h4>
       </div>
       {/* add design later */}
       {/* <Cactuar /> */}

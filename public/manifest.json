@@ -1,19 +1,19 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Cuisine",
+  "name": "Eorzean Cuisine",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "IMG_1221.PNG",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "IMG_1221.PNG",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "IMG_1221.PNG",
       "type": "image/png",
       "sizes": "512x512"
     }

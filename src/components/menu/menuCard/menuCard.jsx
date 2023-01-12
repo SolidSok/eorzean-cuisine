@@ -1,9 +1,9 @@
 import React from 'react';
 import './menuCard.css';
 
-export default function MenuCard({ food, name, images }) {
+export default function MenuCard({ food, name, images, id }) {
   return (
-    <div className="menu">
+    <div className="menu" id={id}>
       <h2 className="category-header">
         <span className="category">{name}</span>
       </h2>
