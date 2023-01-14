@@ -1,7 +1,9 @@
 .location {
   display: flex;
   flex-wrap: wrap;
+  max-width: 800px;
   justify-content: center;
+  margin: auto;
 }
 .location-header {
   background-color: rgba(245, 245, 220, 0.699);
