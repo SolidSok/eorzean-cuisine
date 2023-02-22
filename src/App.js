@@ -6,8 +6,24 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Locations from './components/locations/locations';
 import NotFound from './components/notFound/notFound';
 import Users from './components/user/profile';
+import axios from 'axios';
+import { useEffect, useState } from 'react';
 
 function App() {
+  const [locations, setLocations] = useState();
+  const getLocations = async () => {
+    await axios
+      .get('https://eorzean-cuisine.herokuapp.com/locations')
+      .then(res => {
+        setLocations(res.data);
+        console.log(res.data, 'axios locations');
+      })
+      .catch(err => console.log(err));
+  };
+
+  useEffect(() => {
+    getLocations()
+  })
   return (
     <BrowserRouter className="App">
       <Routes>

@@ -3,11 +3,35 @@ import './locations.css';
 import LocationCard from './LocationCard';
 export default function Locations() {
   const locationSample = [
-    { name: 'Limsa Lominsa', description: 'lorem ipsum', id: 1 },
-    { name: 'location', description: 'description', id: 2 },
-    { name: 'location', description: 'description', id: 3 },
-    { name: 'location', description: 'description', id: 4 },
-    { name: 'location', description: 'description', id: 5 },
+    {
+      name: 'Limsa Lominsa',
+      description: 'lorem ipsum',
+      id: 1,
+      leaderImage:
+        'https://via.placeholder.com/200x150?text=Location+Figurehead',
+    },
+    {
+      name: "Ul'dah",
+      description: 'description',
+      id: 2,
+      leaderImage:
+        'https://via.placeholder.com/200x150?text=Location+Figurehead',
+    },
+    {
+      name: 'Gridania',
+      description: 'description',
+      id: 3,
+      leaderImage:
+        'https://via.placeholder.com/200x150?text=Location+Figurehead',
+    },
+    {
+      name: 'Ishgard',
+      description: 'description',
+      id: 4,
+      leaderImage:
+        'https://via.placeholder.com/200x150?text=Location+Figurehead',
+    },
+    { name: 'Kugane', description: 'description', id: 5 },
   ];
   return (
     <div className="location">
