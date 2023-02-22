@@ -3,6 +3,9 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+.location-upper-half {
+  display: inherit;
+}
 .location-header {
   background-color: rgba(245, 245, 220, 0.699);
   border-radius: 2rem;
@@ -21,7 +24,7 @@
   padding: 10px;
 }
 .location-description {
-  width: 400px;
+  width: 350px;
 }
 .location-locales {
   width: 400px;
@@ -32,4 +35,7 @@
 
 .location-card span {
   border-bottom: 1px solid black;
+}
+.leader-image {
+  width: 350px;
 }

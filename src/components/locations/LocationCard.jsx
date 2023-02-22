@@ -12,21 +12,26 @@ export default function LocationCard({ locationSample }) {
             </h1>
             <div className="location-details">
               {' '}
-              <div className="location-description">
-                {' '}
-                {l.description}
-                <p>
+              <div className="location-upper-half">
+                <div className="location-description">
                   {' '}
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-                  eveniet enim labore cum praesentium, quae maiores a! Maxime
-                  incidunt fugit aperiam facere quam voluptatibus? Fuga magni
-                  aut atque ipsum doloribus.
-                </p>
+                  {l.description}
+                  <p>
+                    {' '}
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Saepe eveniet enim labore cum praesentium, quae maiores a!
+                    Maxime incidunt fugit aperiam facere quam voluptatibus? Fuga
+                    magni aut atque ipsum doloribus.
+                  </p>
+                </div>
+                <figure className="leader-image">
+                  {' '}
+                  <img src={l.leaderImage} alt="leader" />{' '}
+                  <figcaption>
+                    Image of {l.leader}, leader of {l.name}
+                  </figcaption>
+                </figure>
               </div>
-              <img
-                src="https://via.placeholder.com/200x150?text=Location+Figurehead"
-                alt="placeholder"
-              />{' '}
               <div className="location-locales">
                 Locales
                 <p>
