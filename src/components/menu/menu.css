@@ -2,11 +2,7 @@
   display: flex;
   flex-wrap: wrap;
 }
-.menu-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+
 .menu-image {
   border: 1px solid black;
   /* width: 25%; */
