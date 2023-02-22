@@ -13,7 +13,11 @@
 .menu span {
   border-bottom: 1px solid black;
 }
-
+.menu-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .food-item {
   background-color: bisque;
   width: 350px;
