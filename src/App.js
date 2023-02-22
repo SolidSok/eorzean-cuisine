@@ -22,8 +22,8 @@ function App() {
   };
 
   useEffect(() => {
-    getLocations()
-  })
+    getLocations();
+  }, []);
   return (
     <BrowserRouter className="App">
       <Routes>
