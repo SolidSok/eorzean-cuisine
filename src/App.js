@@ -10,44 +10,26 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 
 function App() {
-  const [food, setFood] = useState([]);
-
-  const getFood = async () => {
+  const [locations, setLocations] = useState();
+  const getLocations = async () => {
     await axios
-      .get('https://eorzean-cuisine.herokuapp.com/food')
+      .get('https://eorzean-cuisine.herokuapp.com/locations')
       .then(res => {
-        setFood(res.data);
-        console.log(res.data, 'axios');
+        setLocations(res.data);
+        console.log(res.data, 'axios locations');
       })
-      .catch(err => {
-        console.log(err);
-      });
+      .catch(err => console.log(err));
   };
 
   useEffect(() => {
-    getFood();
+    getLocations();
   }, []);
-
-  // const [locations, setLocations] = useState();
-  // const getLocations = async () => {
-  //   await axios
-  //     .get('https://eorzean-cuisine.herokuapp.com/locations')
-  //     .then(res => {
-  //       setLocations(res.data);
-  //       console.log(res.data, 'axios locations');
-  //     })
-  //     .catch(err => console.log(err));
-  // };
-
-  // useEffect(() => {
-  //   getLocations();
-  // }, []);
   return (
     <BrowserRouter className="App">
       <Routes>
         <Route path="/" element={<Navbar />}>
           <Route index element={<Welcome />} />
-          <Route path="menu" element={<Menu food={food} />} />
+          <Route path="menu" element={<Menu />} />
           <Route path="locations" element={<Locations />} />
           {/* add error 404 page */}
           <Route path="profile" element={<Users />} />
