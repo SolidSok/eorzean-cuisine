@@ -6,25 +6,8 @@ import axios from 'axios';
 import { useState } from 'react';
 import menuImages from './menuImages';
 
-export default function Menu() {
-  const [food, setFood] = useState([]);
+export default function Menu({ food }) {
   const images = menuImages;
-
-  const getFood = async () => {
-    await axios
-      .get('https://eorzean-cuisine.herokuapp.com/food')
-      .then(res => {
-        setFood(res.data);
-        console.log(res.data, 'axios');
-      })
-      .catch(err => {
-        console.log(err);
-      });
-  };
-
-  useEffect(() => {
-    getFood();
-  }, []);
 
   return (
     //great example of reusable components below //
