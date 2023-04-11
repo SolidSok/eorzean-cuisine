@@ -14,7 +14,7 @@ function App() {
 
   const getFood = async () => {
     await axios
-      .get('https://eorzean-cuisine.herokuapp.com/food')
+      .get('https://eorzean-cuisine-api.herokuapp.com/food')
       .then(res => {
         setFood(res.data);
         console.log(res.data, 'axios');
